@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primer Entrega</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/style.css">
     <link rel="icon" href="../imagenes/icono.png">
 
 </head>
+
 <body>
     <header class="header__container">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a title="logo1" href="../index.html"><img src="../imagenes/logo1.png" alt="logo1" /></a>
+                <a title="logo1" href="../index.html"><img src="../imagenes/logo1.png" class="logo" alt="logo1" /></a>
                 <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -25,7 +27,8 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../secciones/sesiones.html">Sesiones</a>
+                            <a class="nav-link active" aria-current="page"
+                                href="../secciones/sesiones.html">Sesiones</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="../secciones/contacto.html">Contacto</a>
@@ -53,63 +56,77 @@
 
 
     <section class="tienda">
-        <div class="libros">
-            <div class="productos">
-                <img src="../imagenes/coactivo.jpg" alt="producto1" class="imagen_producto">
+        <div class="container">
+            <div class="row">
+                <div class="productos col-3">
+                    <img src="../imagenes/coactivo.jpg" alt="producto1" class="imagen_producto">
+                </div>
+                <div class="productos col-3 ">
+                    <img src="../Imagenes/equipos.jpg" alt="producto2" class="imagen_producto">
+                </div>
+                <div class="productos col-3">
+                    <img src="../Imagenes/transformacion.jpg" alt="producto3" class="imagen_producto">
+                </div>
+                <div class="productos col-3">
+                    <img src="../Imagenes/neurociencia.jpg" alt="producto4" class="imagen_producto">
+                </div>
             </div>
-            <div class="productos">
-                <img src="../Imagenes/equipos.jpg" alt="producto2" class="imagen_producto">
+            <div class="row">
+                <div class="productos col-lg-4 col-md-2 col-sm-2">
+                    <img src="../Imagenes/whitmore.png" alt="producto5" class="imagen_producto">
+                </div>
+                <div class="productos col-lg-4 col-md-2 col-sm-2">
+                    <img src="../imagenes/bicondoa.jpg" alt="producto6" class="imagen_producto">
+                </div>
+                <div class="productos col-lg-4 col-md-2 col-sm-2">
+                    <img src="../imagenes/evans.jpg" alt="producto7" class="imagen_producto">
+                </div>
+                <div class="productos col-lg-4 col-md-2 col-sm-2">
+                    <img src="../imagenes/perel.jpg" alt="producto8" class="imagen_producto">
+                </div>
             </div>
-            <div class="productos">
-                <img src="../Imagenes/transformacion.jpg" alt="producto3" class="imagen_producto">
-            </div>
-            <div class="productos">
-                <img src="../Imagenes/neurociencia.jpg" alt="producto4" class="imagen_producto">
-            </div>
-            <div class="productos">
-                <img src="../Imagenes/whitmore.png" alt="producto5" class="imagen_producto">
-            </div>
-            <div class="productos">
-                <img src="../imagenes/bicondoa.jpg" alt="producto6" class="imagen_producto">
-            </div>
-            <div class="productos">
-                <img src="../imagenes/evans.jpg" alt="producto7" class="imagen_producto">
-            </div>
-            <div class="productos">
-                <img src="../imagenes/perel.jpg" alt="producto8" class="imagen_producto">
-            </div>
-            <div class="productos">
-                <img src="../imagenes/manual.jpg" alt="producto9" class="imagen_producto">
-            </div>
-            <div class="productos">
-                <img src="../imagenes/ravier.jpg" alt="producto10" class="imagen_producto">
-            </div>
-            <div class="productos">
-                <img src="../imagenes/asesco.jpg" alt="producto11" class="imagen_producto">
-            </div>
-            <div class="productos">
-                <img src="../Imagenes/wolk.jpg" alt="producto12" class="imagen_producto">
+            <div class="row">
+                <div class="productos col-lg-4 col-md-2 col-sm-2">
+                    <img src="../imagenes/manual.jpg" alt="producto9" class="imagen_producto">
+                </div>
+                <div class="productos col-lg-4 col-md-2 col-sm-2">
+                    <img src="../imagenes/ravier.jpg" alt="producto10" class="imagen_producto">
+                </div>
+                <div class="productos col-lg-4 col-md-2 col-sm-2">
+                    <img src="../imagenes/asesco.jpg" alt="producto11" class="imagen_producto">
+                </div>
+                <div class="productos col-lg-4 col-md-2 col-sm-2">
+                    <img src="../Imagenes/wolk.jpg" alt="producto12" class="imagen_producto">
+                </div>
             </div>
         </div>
-
+        <div class="home-whatsapp">
+            <a href="https://wa.me/+5491165091218" target="_blank" class="social-icons"><img
+                    src="../imagenes/whatsapp.png" alt="Whatsaap"></a>
+        </div>
     </section>
     <footer class="footer">
 
         <nav class="redes">
             <div class="div__redes">
-                <a href="https://www.linkedin.com" target="_blank"><img src="../Imagenes/linkedin.png" alt="Linkedin"></a>
-                <a href="https://www.twitter.com" target="_blank"><img src="../Imagenes/twitter.png" alt="Twitter"></a>
-                <a href="https://www.facebook.com" target="_blank"><img src="../Imagenes/facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="../Imagenes/instagram.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com" target="_blank" class="social-icons"><img
+                        src="../Imagenes/linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icons"><img
+                        src="../Imagenes/twitter.png" alt="Twitter"></a>
+                <a href="https://www.facebook.com" target="_blank" class="social-icons"><img
+                        src="../Imagenes/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icons"><img
+                        src="../Imagenes/instagram.png" alt="Instagram"></a>
 
-            </div> 
+            </div>
         </nav>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-    crossorigin="anonymous"></script>
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
