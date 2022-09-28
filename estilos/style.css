@@ -11,10 +11,6 @@ body {
     background-color: #F5EDDC;
 }
 
-p {
-    text-align: justify;
-    text-justify: inter-word;
-}
 .header__container {
     background-color: #CFD2CF;
     width: 100%;
