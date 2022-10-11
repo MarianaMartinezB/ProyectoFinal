@@ -9,6 +9,16 @@
     z-index: 300;
     @include display-flex (flex, flex-start, center);
 
+    @media (max-width: 700px) {
+        .header__container {
+            font-size: 1.1rem;
+        }
+
+        .logo {
+            transform: scale(0.7, 0.7);
+        }
+    }
+
     @media (max-width: 500px) {
         .header__container {
             font-size: 1rem;

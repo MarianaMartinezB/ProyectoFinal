@@ -67,6 +67,14 @@ a {
   align-items: center;
   justify-content: flex-start;
 }
+@media (max-width: 700px) {
+  .header__container .header__container {
+    font-size: 1.1rem;
+  }
+  .header__container .logo {
+    transform: scale(0.7, 0.7);
+  }
+}
 @media (max-width: 500px) {
   .header__container .header__container {
     font-size: 1rem;
@@ -153,10 +161,20 @@ a {
   line-height: 1.5em;
   font-size: xx-large;
   font-weight: bolder;
+  margin: 1rem;
+}
+@media (max-width: 700px) {
+  .principal .div__principal .presentacion {
+    letter-spacing: 0.3em;
+    line-height: 1.3em;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: 0.78rem;
+  }
 }
 @media (max-width: 500px) {
   .principal .div__principal .presentacion {
-    letter-spacing: 0.09em;
+    letter-spacing: 0.2em;
     line-height: 1em;
     font-size: x-large;
     font-weight: bolder;
@@ -166,10 +184,11 @@ a {
 .principal .div__principal .presentacion2 {
   line-height: 0.4em;
   font-size: normal;
+  margin: 1rem;
 }
 @media (max-width: 500px) {
   .principal .div__principal .presentacion2 {
-    line-height: 0.99em;
+    line-height: 0.09em;
     margin: 0.6rem;
     padding-top: 0.6rem;
   }
@@ -183,6 +202,12 @@ a {
   position: center;
   padding: 1rem;
 }
+@media (max-width: 700px) {
+  .principal .div__principal .perfil .foto {
+    transform: scale(0.78, 0.78);
+    padding: 0.2rem 1rem 1rem 1rem;
+  }
+}
 @media (max-width: 500px) {
   .principal .div__principal .perfil .foto {
     transform: scale(0.7, 0.7);
@@ -192,7 +217,7 @@ a {
 .principal .div__principal .perfil .nombre {
   line-height: 1em;
   font-style: normal;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 .contacto {

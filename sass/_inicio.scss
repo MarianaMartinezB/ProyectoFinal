@@ -17,8 +17,18 @@
             line-height: 1.5em;
             font-size: xx-large;
             font-weight: bolder;
+            margin: 1rem;
+
+            @media (max-width: 700px){
+                letter-spacing: .3em;
+                line-height: 1.3em;
+                font-size: x-large;
+                font-weight: bolder;
+                margin-top: 0.78rem;
+            
+            }            
             @media (max-width: 500px){
-                letter-spacing: .09em;
+                letter-spacing: .2em;
                 line-height: 1em;
                 font-size: x-large;
                 font-weight: bolder;
@@ -29,8 +39,9 @@
         .presentacion2 {
             line-height: 0.4em;
             font-size: normal;
+            margin: 1rem;
             @media (max-width: 500px){
-                line-height: 0.99em;
+                line-height: 0.09em;
                 margin: 0.6rem;
                 padding-top: 0.6rem;
             }
@@ -44,6 +55,11 @@
             .foto {
                 position: center;
                 padding: 1rem;
+
+                @media (max-width: 700px){
+                    transform: scale(0.78, 0.78);
+                    padding: 0.2rem 1rem 1rem 1rem;
+                }
                 @media (max-width: 500px){
                     transform: scale(0.7, 0.7);
                     padding: 0.1rem 1rem 1rem 1rem;
@@ -53,7 +69,7 @@
             .nombre {
                 line-height: 1em;
                 font-style: normal;
-                margin: 0.5rem;
+                margin: 1rem;
             }
         }
     }
