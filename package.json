@@ -1,0 +1,23 @@
+{
+  "name": "tercera-entrega",
+  "version": "1.0.0",
+  "description": "Segunda Entrega proyecto Desarrollo Web CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarianaMartinezB/SegundaEntrega.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarianaMartinezB/SegundaEntrega/issues"
+  },
+  "homepage": "https://github.com/MarianaMartinezB/SegundaEntrega#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}

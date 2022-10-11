@@ -1,0 +1,20 @@
+.footer {
+    color: nth($colores, 1);
+    background-color: #F5EDDC;
+    gap: 0.5rem;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 0.2rem;
+    font-weight: lighter;
+    font-size: xx-small;
+    .redes {
+        @include display-flex (flex, center, center);
+        background-color: #F5EDDC;
+        color: nth($colores, 1);
+        .social-icons:hover {
+            opacity: 0.5;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.header__container {
+    background-color: #CFD2CF;
+    width: 100%;
+    height: auto;
+    color: nth($colores, 1);
+    font-size: 1.25rem;
+    position: sticky;
+    top: 0;
+    z-index: 300;
+    @include display-flex (flex, flex-start, center);
+
+    @media (max-width: 500px) {
+        .header__container {
+            font-size: 1rem;
+        }
+
+        .logo {
+            transform: scale(0.6, 0.6);
+        }
+    }
+}

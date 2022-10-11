@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: calc(15px + 0, 390625vw);
+}
+
+body {
+    background-color: #F5EDDC;
+}
+
+/* elementos comunes */
+.header__container {
+    background-color: #CFD2CF;
+    width: 100%;
+    height: auto;
+    color: black;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 300;
+}
+
+.logo {
+    transform: scale(0.8, 0.8);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-whatsapp {
+    position: fixed;
+    width: 5rem;
+    height: 4.5rem;
+    bottom: 3rem;
+    right: 1.5rem;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    background-color: #F5EDDC;
+    color: gray;
+}
+
+.footer {
+    color: grey;
+    background-color: #F5EDDC;
+    gap: 0.5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.2rem;
+    font-weight: lighter;
+    font-size: xx-small;
+}
+
+.social-icons:hover {
+    opacity: 0.5;
+}
+
+.contacto {
+    margin-left: 5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #F5EDDC;
+    width: 28rem;
+    align-items: center;
+}
+
+/* Estilos Inicio */
+.principal {
+    background-color: #FA9494;
+    color: black;
+    padding: 2% 3%;
+    min-height: 100vh;
+}
+
+.div__principal {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: grey;
+
+}
+
+.presentacion {
+    letter-spacing: .1em;
+    line-height: 1.5em;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.presentacion2 {
+    line-height: 1em;
+}
+
+.foto {
+    position: calc(center);
+    padding: 1rem;
+}
+
+.nombre {
+    line-height: 1em;
+    font-style: normal;
+    margin: 0.5rem;
+}
+
+/* Estilo tienda */
+.libros {
+    padding: 2rem;
+    margin: 2rem 0.5rem;
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    background-color: #F5EDDC;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 20rem;
+    gap: 0.5rem;
+}
+
+.productos {
+    width: min-content;
+    border: 5px solid #F5EDDC;
+    padding: 2rem;
+    margin: 2rem 0.5rem;
+
+}
+
+.imagen_producto {
+    box-shadow: 6px 6px 5px 0px rgba(207, 210, 207, 0.53);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.53);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.53);
+    transition: all 0.3s;
+
+}
+
+.imagen_producto:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+.imagen_curso {
+    box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.7);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.7);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.7);
+    padding: 0.5rem;
+}
+
+.imagen_curso:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+.cursos {
+    font-size: small;
+    font-weight: bold;
+    width: 50%;
+    max-width: 80%;
+    margin-left: 5rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.capacitacion {
+    width: min-content;
+    border: 15px solid #F5EDDC;
+    height: auto;
+}
+
+.contenedor___cursos {
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    background-color: #F5EDDC;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 20rem;
+    gap: 1rem;
+    box-sizing: content-box;
+    padding: 2rem;
+}
+
+.card_text {
+    font-size: 0.5rem;
+}
+
+/* Estilo Contacto */
+.get-in-touch {
+    max-width: 28rem;
+    margin: 2rem auto;
+}
+
+.get-in-touch .title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 3rem;
+    padding-bottom: 3rem;
+    color: #5543ca;
+    background: #5543ca;
+    background: -moz-linear-gradient(left, #f4524d 0%, #5543ca 100%);
+    background: -webkit-linear-gradient(left, #f4524d 0%, #5543ca 100%);
+    background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+    background-clip: calc(text);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.contact-form .form-field {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #5543ca;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    background-color: #F5EDDC;
+}
+
+.contact-form .input-text:focus {
+    outline: none;
+}
+
+.contact-form .input-text:focus+.label,
+.contact-form .input-text.not-empty+.label {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+}
+
+.contact-form .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #5543ca;
+    cursor: text;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out,
+        -webkit-transform .2s ease-in-out;
+}
+
+.contact-form .submit-btn {
+    display: inline-block;
+    background-color: #000;
+    background-image: linear-gradient(125deg, #a72879, #064497);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+}
+
+/*Estilo Sesiones*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.sesiones_container {
+    margin: 3rem auto;
+}
+
+.container {
+    box-sizing: border-box;
+    margin: 2rem auto;
+}
+
+.imagen_sesion {
+    opacity: 0.5;
+}
+
+.body {
+    width: 35rem;
+    max-width: 35rem;
+    height: 25rem;
+    margin: 1rem auto;
+    border: 1px solid #dddd;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.box-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-2 {
+    padding: 0.6rem;
+}
+
+.box-1,
+.box-2 {
+    width: 50%;
+}
+
+.h-1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: gray;
+}
+
+.text-muted {
+    font-size: 14px;
+}
+
+.container .box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    text-decoration: none;
+    color: #615f5fdd;
+}
+
+.box:active,
+.box:visited {
+    border: 2px solid #ee82ee;
+}
+
+.box:hover {
+    border: 2px solid #ee82ee;
+}
+
+.btn.btn-primary {
+    background-color: transparent;
+    color: #ee82ee;
+    border: 0px;
+    padding: 0;
+    font-size: 14px;
+}
+
+.btn.btn-primary .fas.fa-chevron-right {
+    font-size: 12px;
+}
+
+/* estilo pantalla tablet pequeña*/
+@media (max-width:767px) {
+    body {
+        padding: 10px;
+    }
+
+    .body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-1 {
+        width: 100%;
+    }
+
+    .box-2 {
+        width: 100%;
+        height: 440px;
+    }
+
+    .libros {
+        padding: 2rem;
+        margin: 2rem 0.5rem;
+        display: grid;
+        place-content: center;
+        justify-content: center;
+        background-color: #F5EDDC;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 20rem;
+        gap: 0.5rem;
+    }
+
+    /* Estilo pantalla tamaño celular */
+    @media (max-width: 500px) {
+
+        .header__container {
+            width: 100%;
+            font-size: 1rem;
+            top: 0;
+            height: auto;
+        }
+
+        .logo {
+            transform: scale(0.6, 0.6);
+        }
+
+        .foto {
+            transform: scale(0.8, 0.8);
+            padding: 0.1rem 1rem 1rem 1rem;
+        }
+
+        .presentacion {
+            letter-spacing: .1em;
+            line-height: 1em;
+            font-size: x-large;
+            font-weight: bolder;
+            margin-top: 0.7rem;
+        }
+
+        .presentacion2 {
+            line-height: 0.9em;
+            margin: 0.6rem;
+            padding-top: 0.6rem;
+        }
+
+        .nombre {
+            line-height: 1.2em;
+            font-style: normal;
+            font-size: small;
+            margin: 1rem 0.5rem;
+            padding: 1rem 0.5rem;
+        }
+
+        .perfil {
+            position: calc(center);
+        }
+
+        .presentacion {
+            margin: 0.8rem;
+        }
+
+
+
+        .contenedor___cursos {
+            display: grid;
+            place-content: center;
+            justify-content: center;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 18rem;
+            gap: 0.8rem;
+            box-sizing: content-box;
+            padding: 1.5rem;
+        }
+
+        .imagen_producto {
+            margin: 0.3rem 5rem;
+        }
+
+
+        .contacto {
+            max-width: 50%;
+        }
+
+        .get-in-touch {
+            max-width: 15rem;
+            margin: 1.5rem auto;
+        }
+
+        .get-in-touch .title {
+            letter-spacing: 2px;
+            font-size: 1.7em;
+            line-height: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .contact-form .form-field {
+            margin: 1.5rem 0;
+        }
+
+        .contact-form .input-text {
+            display: block;
+            width: 100%;
+            height: 2rem;
+        }
+
+
+        .contact-form .label {
+            left: 1rem;
+            bottom: 0.6rem;
+            font-size: 1rem;
+            line-height: 1.6rem;
+            font-weight: 300;
+        }
+
+        /* tamaño medio tablet */
+        @media (max-width: 650px) {
+            .imagen_curso {
+                box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.7);
+                -webkit-box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.7);
+                -moz-box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.7);
+                padding: 0.5rem;
+                transform: scale(0.9, 0.9);
+            }
+
+            .capacitacion {
+                width: min-content;
+                border: 16px solid #F5EDDC;
+            }
+
+            .libros {
+                padding: 2rem;
+                margin: 2rem 0.5rem;
+                display: grid;
+                place-content: center;
+                justify-content: center;
+                background-color: #F5EDDC;
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 20rem;
+                gap: 0.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import "generales";
+
+.principal {
+    background-color: nth($colores, 2);
+    color: black;
+    padding: 2% 3%;
+    min-height: 100vh;
+
+    .div__principal {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        color: nth($colores, 1);
+
+        .presentacion {
+            letter-spacing: .1em;
+            line-height: 1.5em;
+            font-size: xx-large;
+            font-weight: bolder;
+            @media (max-width: 500px){
+                letter-spacing: .09em;
+                line-height: 1em;
+                font-size: x-large;
+                font-weight: bolder;
+                margin-top: 0.7rem;
+            }
+        }
+
+        .presentacion2 {
+            line-height: 0.4em;
+            font-size: normal;
+            @media (max-width: 500px){
+                line-height: 0.99em;
+                margin: 0.6rem;
+                padding-top: 0.6rem;
+            }
+        }
+
+        .perfil {
+            @media (max-width: 500px) {
+                position: center;
+            }
+
+            .foto {
+                position: center;
+                padding: 1rem;
+                @media (max-width: 500px){
+                    transform: scale(0.7, 0.7);
+                    padding: 0.1rem 1rem 1rem 1rem;
+                }
+            }
+
+            .nombre {
+                line-height: 1em;
+                font-style: normal;
+                margin: 0.5rem;
+            }
+        }
+    }
+}

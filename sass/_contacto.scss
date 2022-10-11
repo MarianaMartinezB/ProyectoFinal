@@ -1,0 +1,128 @@
+.contacto {
+    margin-left: 5rem;
+    display: flex;
+    justify-content: center;
+    width: 28rem;
+    align-items: center;
+
+    .get-in-touch {
+        max-width: 28rem;
+        margin: 2rem auto;
+        border-color: #5543ca;
+        color: #5543ca;
+
+        .title {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 3em;
+            line-height: 3rem;
+            padding-bottom: 3rem;
+            background: #5543ca;
+            background: -moz-linear-gradient(left, #f4524d 0%, #5543ca 100%);
+            background: -webkit-linear-gradient(left, #f4524d 0%, #5543ca 100%);
+            background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+            background-clip: calc (text);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        .contact-form {
+            .form-field {
+                position: relative;
+                margin: 2rem 0;
+
+                .input-text {
+                    display: block;
+                    width: 100%;
+                    height: 36px;
+                    border-width: 0 0 2px 0;
+                    border-color: #5543ca;
+                    font-size: 18px;
+                    line-height: 26px;
+                    font-weight: 400;
+                    background-color: #F5EDDC;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &:focus+.label,
+                    &.not-empty+.label  {
+                        -webkit-transform: translateY(-24px);
+                        transform: translateY(-24px);
+                    }
+
+                    .label {
+                        position: absolute;
+                        left: 20px;
+                        bottom: 11px;
+                        font-size: 18px;
+                        line-height: 26px;
+                        font-weight: 400;
+                        background-color: #F5EDDC;
+                        color: #5543ca;
+                        cursor: text;
+                        transition: -webkit-transform .2s ease-in-out;
+                        transition: transform .2s ease-in-out;
+                        transition: transform .2s ease-in-out,
+                            -webkit-transform .2s ease-in-out;
+                    }
+                }
+            }
+            .submit-btn {
+                display: inline-block;
+                background-color: #000;
+                background-image: linear-gradient(125deg, #a72879, #064497);
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 12px;
+                padding: 8px 16px;
+                border: none;
+                width: 200px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+
+        max-width: 50%;
+
+        .contacto {
+            max-width: 50%;
+
+            .get-in-touch {
+                max-width: 12rem;
+                margin: 1rem auto;
+
+
+                .get-in-touch .title {
+                    letter-spacing: 2px;
+                    font-size: 1.5em;
+                    line-height: 2rem;
+                    padding-bottom: 2rem;
+                }
+
+                .contact-form .form-field {
+                    margin: 1.2rem 0;
+                }
+
+                .contact-form .input-text {
+                    display: block;
+                    width: 80%;
+                    height: 2rem;
+                }
+
+                .contact-form .label {
+                    left: 1rem;
+                    bottom: 0.6rem;
+                    font-size: 1rem;
+                    line-height: 1.6rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

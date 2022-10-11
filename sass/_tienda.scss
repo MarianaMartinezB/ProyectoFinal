@@ -1,0 +1,27 @@
+.container {
+    box-sizing: border-box;
+    margin: 2rem auto;
+
+    .productos {
+        width: min-content;
+        border: 5px solid #F5EDDC;
+        padding: 2rem;
+        margin: 2rem 0.5rem;
+
+        .imagen_producto {
+            box-shadow: 6px 6px 5px 0px rgba(207, 210, 207, 0.53);
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.53);
+            -moz-box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.53);
+            transition: all 0.3s;
+            @media (max-width: 500px){
+                margin: 0.3rem 5rem;
+            }
+
+            &:hover {
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+                overflow: hidden;
+            }
+        }
+    }
+}
