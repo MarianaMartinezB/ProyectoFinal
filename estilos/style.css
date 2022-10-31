@@ -37,7 +37,7 @@ a {
   opacity: 0.5;
 }
 
-.sesiones_container .container .body .boton, .contenedor___cursos .capacitacion .card-body .boton {
+.sesiones_container .container .body .boton, .contenedor___cursos .capacitacion .card-body .boton, .contacto .get-in-touch .submit-btn {
   display: inline-block;
   background-color: #000;
   background-image: linear-gradient(125deg, #a72879, #064497);
@@ -214,6 +214,9 @@ a {
     padding: 0.1rem 1rem 1rem 1rem;
   }
 }
+.principal .div__principal .perfil .foto:hover {
+  transform: scale(1.1);
+}
 .principal .div__principal .perfil .nombre {
   line-height: 1em;
   font-style: normal;
@@ -224,14 +227,25 @@ a {
   margin-left: 5rem;
   display: flex;
   justify-content: center;
-  width: 28rem;
+  width: 90%;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .contacto {
+    max-width: 50%;
+  }
 }
 .contacto .get-in-touch {
   max-width: 28rem;
   margin: 2rem auto;
   border-color: #5543ca;
   color: #5543ca;
+}
+@media (max-width: 500px) {
+  .contacto .get-in-touch {
+    max-width: 12rem;
+    margin: 1rem auto;
+  }
 }
 .contacto .get-in-touch .title {
   text-align: center;
@@ -246,11 +260,24 @@ a {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+@media (max-width: 500px) {
+  .contacto .get-in-touch .title {
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+  }
+}
 .contacto .get-in-touch .contact-form .form-field {
   position: relative;
   margin: 2rem 0;
 }
-.contacto .get-in-touch .contact-form .form-field .input-text {
+@media (max-width: 500px) {
+  .contacto .get-in-touch .contact-form .form-field {
+    margin: 1.2rem 0;
+  }
+}
+.contacto .get-in-touch .contact-form .input-text {
   display: block;
   width: 100%;
   height: 36px;
@@ -261,13 +288,20 @@ a {
   font-weight: 400;
   background-color: #F5EDDC;
 }
-.contacto .get-in-touch .contact-form .form-field .input-text:focus {
+@media (max-width: 500px) {
+  .contacto .get-in-touch .contact-form .input-text {
+    display: block;
+    width: 80%;
+    height: 2rem;
+  }
+}
+.contacto .get-in-touch .contact-form .input-text:focus {
   outline: none;
 }
-.contacto .get-in-touch .contact-form .form-field .input-text:focus + .label, .contacto .get-in-touch .contact-form .form-field .input-text.not-empty + .label {
+.contacto .get-in-touch .contact-form .input-text:focus + .label, .contacto .get-in-touch .contact-form .input-text.not-empty + .label {
   transform: translateY(-24px);
 }
-.contacto .get-in-touch .contact-form .form-field .input-text .label {
+.contacto .get-in-touch .contact-form .input-text .label {
   position: absolute;
   left: 20px;
   bottom: 11px;
@@ -279,45 +313,8 @@ a {
   cursor: text;
   transition: transform 0.2s ease-in-out;
 }
-.contacto .get-in-touch .contact-form .submit-btn {
-  display: inline-block;
-  background-color: #000;
-  background-image: linear-gradient(125deg, #a72879, #064497);
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 12px;
-  padding: 8px 16px;
-  border: none;
-  width: 200px;
-  cursor: pointer;
-}
 @media (max-width: 500px) {
-  .contacto {
-    max-width: 50%;
-  }
-  .contacto .contacto {
-    max-width: 50%;
-  }
-  .contacto .contacto .get-in-touch {
-    max-width: 12rem;
-    margin: 1rem auto;
-  }
-  .contacto .contacto .get-in-touch .get-in-touch .title {
-    letter-spacing: 2px;
-    font-size: 1.5em;
-    line-height: 2rem;
-    padding-bottom: 2rem;
-  }
-  .contacto .contacto .get-in-touch .contact-form .form-field {
-    margin: 1.2rem 0;
-  }
-  .contacto .contacto .get-in-touch .contact-form .input-text {
-    display: block;
-    width: 80%;
-    height: 2rem;
-  }
-  .contacto .contacto .get-in-touch .contact-form .label {
+  .contacto .get-in-touch .contact-form .input-text .label {
     left: 1rem;
     bottom: 0.6rem;
     font-size: 1rem;
@@ -325,59 +322,94 @@ a {
     font-weight: 300;
   }
 }
+.contacto .get-in-touch .textarea {
+  display: inline-block;
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  border-width: 0 0 2px 0;
+  border-color: #5543ca;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  background-color: #F5EDDC;
+}
+@media (max-width: 500px) {
+  .contacto .get-in-touch .textarea {
+    width: 80%;
+  }
+}
+.contacto .get-in-touch .submit-btn {
+  font-size: 12px;
+}
+@media (max-width: 1200px) {
+  .contacto .contenedor_imagen {
+    display: none;
+  }
+}
+.contacto .imagen_contacto {
+  opacity: 50%;
+}
 
 .contenedor___cursos {
-  display: grid;
   place-content: center;
   justify-content: center;
-  background-color: #F5EDDC;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 20rem;
+  align-items: center;
   gap: 1rem;
-  box-sizing: content-box;
-  padding: 2rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  background-color: #F5EDDC;
 }
 @media (max-width: 500px) {
   .contenedor___cursos {
-    display: grid;
-    place-content: center;
-    justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 18rem;
-    gap: 0.8rem;
-    box-sizing: content-box;
-    padding: 1.5rem;
+    margin-left: 10rem;
+    padding: 0.9rem;
   }
 }
 .contenedor___cursos .capacitacion {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  border: 15px solid #F5EDDC;
+  border: 18px solid #F5EDDC;
   height: auto;
-}
-@media (max-width: 650px) {
-  .contenedor___cursos .capacitacion {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    border: 16px solid #F5EDDC;
-  }
 }
 .contenedor___cursos .capacitacion .imagen_curso {
   box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.7);
   -webkit-box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.7);
   -moz-box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.7);
   padding: 0.5rem;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: all 1s ease;
 }
 .contenedor___cursos .capacitacion .imagen_curso:hover {
-  transform: scale(1.2);
+  filter: grayscale(0%);
+  filter: gray;
+  filter: none;
+  transition: 1s ease;
   overflow: hidden;
 }
-@media (max-width: 650px) {
+@media (max-width: 500px) {
   .contenedor___cursos .capacitacion .imagen_curso {
-    transform: scale(0.9, 0.9);
+    resize: both;
   }
+}
+.contenedor___cursos .capacitacion .card-body {
+  padding: 1rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 700px) {
+  .contenedor___cursos .capacitacion .card-body {
+    overflow: hidden;
+  }
+}
+.contenedor___cursos .capacitacion .card-body .boton {
+  padding-left: 1.5rem;
 }
 .contenedor___cursos .capacitacion .card-body .boton:hover {
   opacity: 0.5;

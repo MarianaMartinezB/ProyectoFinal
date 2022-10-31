@@ -1,15 +1,26 @@
+@import "generales";
+
 .contacto {
     margin-left: 5rem;
     display: flex;
     justify-content: center;
-    width: 28rem;
+    width: 90%;
     align-items: center;
+
+    @media (max-width: 500px) {
+        max-width: 50%;
+    }
 
     .get-in-touch {
         max-width: 28rem;
         margin: 2rem auto;
-        border-color: #5543ca;
-        color: #5543ca;
+        border-color: nth($colores, 3);
+        color: nth($colores, 3);
+
+        @media (max-width: 500px) {
+            max-width: 12rem;
+            margin: 1rem auto;
+        }
 
         .title {
             text-align: center;
@@ -18,13 +29,21 @@
             font-size: 3em;
             line-height: 3rem;
             padding-bottom: 3rem;
-            background: #5543ca;
+            background: nth($colores, 3);
             background: -moz-linear-gradient(left, #f4524d 0%, #5543ca 100%);
             background: -webkit-linear-gradient(left, #f4524d 0%, #5543ca 100%);
             background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
             background-clip: calc (text);
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
+
+            @media (max-width: 500px) {
+                letter-spacing: 2px;
+                font-size: 1.5em;
+                line-height: 2rem;
+                padding-bottom: 2rem;
+            }
+
         }
 
         .contact-form {
@@ -32,97 +51,94 @@
                 position: relative;
                 margin: 2rem 0;
 
-                .input-text {
-                    display: block;
-                    width: 100%;
-                    height: 36px;
-                    border-width: 0 0 2px 0;
-                    border-color: #5543ca;
-                    font-size: 18px;
-                    line-height: 26px;
-                    font-weight: 400;
-                    background-color: #F5EDDC;
-
-                    &:focus {
-                        outline: none;
-                    }
-
-                    &:focus+.label,
-                    &.not-empty+.label  {
-                        -webkit-transform: translateY(-24px);
-                        transform: translateY(-24px);
-                    }
-
-                    .label {
-                        position: absolute;
-                        left: 20px;
-                        bottom: 11px;
-                        font-size: 18px;
-                        line-height: 26px;
-                        font-weight: 400;
-                        background-color: #F5EDDC;
-                        color: #5543ca;
-                        cursor: text;
-                        transition: -webkit-transform .2s ease-in-out;
-                        transition: transform .2s ease-in-out;
-                        transition: transform .2s ease-in-out,
-                            -webkit-transform .2s ease-in-out;
-                    }
-                }
-            }
-            .submit-btn {
-                display: inline-block;
-                background-color: #000;
-                background-image: linear-gradient(125deg, #a72879, #064497);
-                color: #fff;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                font-size: 12px;
-                padding: 8px 16px;
-                border: none;
-                width: 200px;
-                cursor: pointer;
-            }
-        }
-    }
-
-    @media (max-width: 500px) {
-
-        max-width: 50%;
-
-        .contacto {
-            max-width: 50%;
-
-            .get-in-touch {
-                max-width: 12rem;
-                margin: 1rem auto;
-
-
-                .get-in-touch .title {
-                    letter-spacing: 2px;
-                    font-size: 1.5em;
-                    line-height: 2rem;
-                    padding-bottom: 2rem;
-                }
-
-                .contact-form .form-field {
+                @media (max-width: 500px) {
                     margin: 1.2rem 0;
                 }
+            }
 
-                .contact-form .input-text {
+            .input-text {
+                display: block;
+                width: 100%;
+                height: 36px;
+                border-width: 0 0 2px 0;
+                border-color: nth($colores, 3);
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 400;
+                background-color: nth($colores, 7);
+
+                @media (max-width: 500px) {
                     display: block;
                     width: 80%;
                     height: 2rem;
                 }
 
-                .contact-form .label {
-                    left: 1rem;
-                    bottom: 0.6rem;
-                    font-size: 1rem;
-                    line-height: 1.6rem;
-                    font-weight: 300;
+                &:focus {
+                    outline: none;
+                }
+
+                &:focus+.label,
+                &.not-empty+.label {
+                    -webkit-transform: translateY(-24px);
+                    transform: translateY(-24px);
+                }
+
+                .label {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 11px;
+                    font-size: 18px;
+                    line-height: 26px;
+                    font-weight: 400;
+                    background-color: nth($colores, 7);
+                    color: nth($colores, 3);
+                    cursor: text;
+                    transition: -webkit-transform .2s ease-in-out;
+                    transition: transform .2s ease-in-out;
+                    transition: transform .2s ease-in-out,
+                        -webkit-transform .2s ease-in-out;
+
+                    @media (max-width: 500px) {
+                        left: 1rem;
+                        bottom: 0.6rem;
+                        font-size: 1rem;
+                        line-height: 1.6rem;
+                        font-weight: 300;
+                    }
                 }
             }
         }
+
+        .textarea {
+            display: inline-block;
+            width: 100%;
+            height: 10rem;
+            overflow: hidden;
+            border-width: 0 0 2px 0;
+            border-color: nth($colores, 3);
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+            background-color: nth($colores, 7);
+
+            @media (max-width: 500px) {
+                width: 80%;
+            }
+        }
+
+        .submit-btn {
+            @extend %botones;
+            font-size: 12px;
+        }
+    }
+
+    .contenedor_imagen {
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    .imagen_contacto {
+        opacity: 50%;
     }
 }

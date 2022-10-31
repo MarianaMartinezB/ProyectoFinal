@@ -2,7 +2,7 @@
 
 .principal {
     background-color: nth($colores, 2);
-    color: black;
+    color: nth($colores, 4);
     padding: 2% 3%;
     min-height: 100vh;
 
@@ -63,6 +63,10 @@
                 @media (max-width: 500px){
                     transform: scale(0.7, 0.7);
                     padding: 0.1rem 1rem 1rem 1rem;
+                }
+                &:hover{
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
                 }
             }
 

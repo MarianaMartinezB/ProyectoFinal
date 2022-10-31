@@ -1,55 +1,64 @@
+@import "generales";
+
 .contenedor___cursos {
-    display: grid;
     place-content: center;
     justify-content: center;
-    background-color: #F5EDDC;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 20rem;
+    align-items: center;
     gap: 1rem;
-    box-sizing: content-box;
-    padding: 2rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: nth($colores, 7);
 
     @media (max-width: 500px) {
-        display: grid;
-        place-content: center;
-        justify-content: center;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 18rem;
-        gap: 0.8rem;
-        box-sizing: content-box;
-        padding: 1.5rem;
+        margin-left: 10rem;
+        padding: 0.9rem;
     }
 
     .capacitacion {
         width: min-content;
-        border: 15px solid #F5EDDC;
+        border: 18px solid #F5EDDC;
         height: auto;
-
-        @media (max-width: 650px) {
-            width: min-content;
-            border: 16px solid #F5EDDC;
-        }
 
         .imagen_curso {
             box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.7);
             -webkit-box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.7);
             -moz-box-shadow: 5px 5px 5px 0px rgba(207, 210, 207, 0.7);
             padding: 0.5rem;
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            -webkit-transition: all 1s ease;
+            transition: all 1s ease;
 
             &:hover {
-                -webkit-transform: scale(1.2);
-                transform: scale(1.2);
+                filter: grayscale(0%);
+                filter: gray;
+                -webkit-filter: grayscale(0%);
+                -webkit-filter: saturate(200%);
+                filter: none;
+                transition: 1s ease;
                 overflow: hidden;
             }
 
-            @media (max-width: 650px) {
-                transform: scale(0.9, 0.9);
+            @media (max-width: 500px) {
+                resize: both;
             }
+
+
         }
 
         .card-body {
+            padding: 1rem;
+            height: max-content;
+            width: fit-content;
+
+            @media (max-width: 700px) {
+                overflow: hidden;
+            }
+
             .boton {
+                padding-left: 1.5rem;
                 @extend %botones;
+
                 &:hover {
                     opacity: 0.5;
                 }
