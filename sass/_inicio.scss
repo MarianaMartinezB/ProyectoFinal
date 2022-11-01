@@ -3,7 +3,7 @@
 .principal {
     background-color: nth($colores, 2);
     color: nth($colores, 4);
-    padding: 2% 3%;
+    padding: 0.5% 3% 2% 3%;
     min-height: 100vh;
 
     .div__principal {
@@ -13,16 +13,17 @@
         color: nth($colores, 1);
 
         .presentacion {
-            letter-spacing: .1em;
-            line-height: 1.5em;
-            font-size: xx-large;
+            @extend %presentaciones;
+            letter-spacing: .3em;
+            line-height: 2em;
+            font-size: 1.8rem;
             font-weight: bolder;
-            margin: 1rem;
+            // margin: 1.2rem; 
 
             @media (max-width: 700px){
                 letter-spacing: .3em;
                 line-height: 1.3em;
-                font-size: x-large;
+                font-size: xx-large;
                 font-weight: bolder;
                 margin-top: 0.78rem;
             
@@ -72,8 +73,10 @@
 
             .nombre {
                 line-height: 1em;
-                font-style: normal;
+                font-style:italic;
                 margin: 1rem;
+                font-size: large;
+                font-weight: bolder;
             }
         }
     }

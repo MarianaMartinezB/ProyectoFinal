@@ -45,12 +45,51 @@ a {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.6rem;
+  font-weight: normal;
   padding: 8px 16px;
+  margin-top: 8px;
   border: none;
   width: 6rem;
   cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.principal .div__principal .presentacion {
+  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, gray, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+          animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+}
+@-webkit-keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@-webkit-keyframes glow {
+  40% {
+    text-shadow: 0 0 8px gray;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px gray;
+  }
 }
 
 .header__container {
@@ -147,7 +186,7 @@ a {
 .principal {
   background-color: #FA9494;
   color: black;
-  padding: 2% 3%;
+  padding: 0.5% 3% 2% 3%;
   min-height: 100vh;
 }
 .principal .div__principal {
@@ -157,17 +196,16 @@ a {
   color: gray;
 }
 .principal .div__principal .presentacion {
-  letter-spacing: 0.1em;
-  line-height: 1.5em;
-  font-size: xx-large;
+  letter-spacing: 0.3em;
+  line-height: 2em;
+  font-size: 1.8rem;
   font-weight: bolder;
-  margin: 1rem;
 }
 @media (max-width: 700px) {
   .principal .div__principal .presentacion {
     letter-spacing: 0.3em;
     line-height: 1.3em;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bolder;
     margin-top: 0.78rem;
   }
@@ -219,8 +257,47 @@ a {
 }
 .principal .div__principal .perfil .nombre {
   line-height: 1em;
-  font-style: normal;
+  font-style: italic;
   margin: 1rem;
+  font-size: large;
+  font-weight: bolder;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(13px + 0.390625vw);
+}
+
+body {
+  background-color: #f5eddc;
+  color: gray;
+}
+
+.logo {
+  transform: scale(0.8, 0.8);
+}
+@media (max-width: 500px) {
+  .logo {
+    transform: scale(0.6, 0.6);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-whatsapp {
+  position: fixed;
+  width: 5rem;
+  height: 4.5rem;
+  bottom: 3rem;
+  right: 1.5rem;
+}
+.home-whatsapp:hover {
+  opacity: 0.5;
 }
 
 .contacto {
@@ -351,6 +428,43 @@ a {
   opacity: 50%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(13px + 0.390625vw);
+}
+
+body {
+  background-color: #f5eddc;
+  color: gray;
+}
+
+.logo {
+  transform: scale(0.8, 0.8);
+}
+@media (max-width: 500px) {
+  .logo {
+    transform: scale(0.6, 0.6);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-whatsapp {
+  position: fixed;
+  width: 5rem;
+  height: 4.5rem;
+  bottom: 3rem;
+  right: 1.5rem;
+}
+.home-whatsapp:hover {
+  opacity: 0.5;
+}
+
 .contenedor___cursos {
   place-content: center;
   justify-content: center;
@@ -402,6 +516,7 @@ a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  position: relative;
 }
 @media (max-width: 700px) {
   .contenedor___cursos .capacitacion .card-body {
@@ -472,6 +587,7 @@ a {
 }
 .sesiones_container .container .body .text-muted {
   font-size: 14px;
+  padding-bottom: 0.5rem;
 }
 .sesiones_container .container .body .box {
   width: 100px;

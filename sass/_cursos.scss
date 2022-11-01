@@ -42,14 +42,13 @@
             @media (max-width: 500px) {
                 resize: both;
             }
-
-
         }
 
         .card-body {
             padding: 1rem;
             height: max-content;
             width: fit-content;
+            position: relative;
 
             @media (max-width: 700px) {
                 overflow: hidden;
