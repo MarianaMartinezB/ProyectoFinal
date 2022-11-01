@@ -18,17 +18,18 @@
             line-height: 2em;
             font-size: 1.8rem;
             font-weight: bolder;
-            // margin: 1.2rem; 
+            margin: 0.5rem;
 
-            @media (max-width: 700px){
+            @media (max-width: 700px) {
                 letter-spacing: .3em;
                 line-height: 1.3em;
                 font-size: xx-large;
                 font-weight: bolder;
                 margin-top: 0.78rem;
-            
-            }            
-            @media (max-width: 500px){
+
+            }
+
+            @media (max-width: 500px) {
                 letter-spacing: .2em;
                 line-height: 1em;
                 font-size: x-large;
@@ -41,7 +42,8 @@
             line-height: 0.4em;
             font-size: normal;
             margin: 1rem;
-            @media (max-width: 500px){
+
+            @media (max-width: 500px) {
                 line-height: 0.09em;
                 margin: 0.6rem;
                 padding-top: 0.6rem;
@@ -57,15 +59,17 @@
                 position: center;
                 padding: 1rem;
 
-                @media (max-width: 700px){
+                @media (max-width: 700px) {
                     transform: scale(0.78, 0.78);
                     padding: 0.2rem 1rem 1rem 1rem;
                 }
-                @media (max-width: 500px){
+
+                @media (max-width: 500px) {
                     transform: scale(0.7, 0.7);
                     padding: 0.1rem 1rem 1rem 1rem;
                 }
-                &:hover{
+
+                &:hover {
                     -webkit-transform: scale(1.1);
                     transform: scale(1.1);
                 }
@@ -73,7 +77,7 @@
 
             .nombre {
                 line-height: 1em;
-                font-style:italic;
+                font-style: italic;
                 margin: 1rem;
                 font-size: large;
                 font-weight: bolder;
